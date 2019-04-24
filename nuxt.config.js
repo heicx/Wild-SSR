@@ -4,14 +4,14 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
   server: {
-    port: 81,
+    port: 82,
     host: '0.0.0.0'
   },
   /*
   ** Headers of the page
   */
   head: {
-    title: 'FLOW 福禄 换弹雾化烟',
+    title: 'vvild 小野减害雾化电子烟',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
@@ -19,7 +19,7 @@ module.exports = {
       { hid: 'keywords', name: 'keywords', content: pkg.keywords[0] }
     ],
     link: [
-      { rel: 'shortcut icon', type: 'image/png', href: '/logo.png' }
+      { rel: 'shortcut icon', type: 'image/png', href: '/logo-icon.jpg' }
     ]
   },
 
@@ -63,6 +63,6 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {},
-    publicPath: '//static.flowclub.com/resources/'
+    publicPath: '//vvild-static.tcka.cn/resources/'
   },
 }
