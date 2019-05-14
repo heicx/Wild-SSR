@@ -12,15 +12,15 @@
 			<ul class="footer-info">
 				<li class="address">地址：北京市北京经济技术开发区科创十三街 29 号院一区 2 号楼</li>
 				<li class="email">
-					<a href="mailto:bd@flowclub.com">商务合作：bd@vvild.cn</a>
+					<a href="mailto:bd@vvild.cn">商务合作：bd@vvild.cn</a>
 				</li>
 				<!-- <li class="tel">客服电话：400-086-3666</li> -->
 			</ul>
 			<ul class="copyright">
-				<li>Copyright © 2019, Beijing Dayin Technology Co., Ltd. All Rights Reserved.</li>
-				<!-- <li>
-					<a href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 备 19005651 号 - 1</a>
-				</li> -->
+				<li>Copyright © 2019, Beijing Dawen Technology Co., Ltd. All Rights Reserved.</li>
+				<li>
+					<a href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 备 19018410 号 - 1	</a>
+				</li>
 				<!-- <li>
 					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037227" target="_blank">京公网安备 11010502037227 号</a>
 				</li> -->
