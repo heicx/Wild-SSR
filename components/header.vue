@@ -2,7 +2,7 @@
 	<div class="header-topbar">
 		<div class="container clearfix">
       <router-link class="topbar-logo" to='/' tag='a'></router-link>
-      <a class="topbar-button" href="https://item.jd.com/45648416729.html" target="_blank"></a>
+      <a class="topbar-button" href="https://mall.jd.com/index-1000187701.html" target="_blank"></a>
 			<div class="topbar-tabs">
 				<router-link v-for='(item, index) in list' :key='index' :class='{"active": item.alias.indexOf($route.name) > -1}' :to='item.link' tag='a'>{{item.name}}{{$route.test}}</router-link>
       </div>
