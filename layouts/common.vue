@@ -1,36 +1,55 @@
 <template>
   <div id="app" class="app-wrap">
-		<app-header></app-header>
+    <component v-bind:is="currentTabHeader"></component>
     <app-navigation :isHide='isHide'></app-navigation>
-    <nuxt />
-		<app-footer></app-footer>
+    <router-view :isLangCN="isLangCN" />
+    <component v-bind:is="currentTabFooter"></component>
 	</div>
 </template>
 
 <script>
-import appHeader from '../components/header.vue';
+import appHeaderCN from '../components/headerCN.vue';
+import appHeaderEN from '../components/headerEN.vue';
 import appNavigation from '../components/navigation.vue';
-import appFooter from '../components/footer.vue';
+import appFooterCN from '../components/footerCN.vue';
+import appFooterEN from '../components/footerEN.vue';
 import Bus from '../assets/bus';
 
 export default {
   data() {
     return {
-      isHide: true
+      isHide: true,
+      isLangCN: true,
+      currentTabHeader: 'header-cn',
+      currentTabFooter: 'footer-cn'
     }
   },
   mounted () {
     this.isHide = !(this.$route.name == 'tech' || this.$route.name == 'spec');
   },
   created() {
+
+    var lang = (navigator.systemLanguage ? navigator.systemLanguage : navigator.language);
+    var lang = lang.substr(0, 2);
+  　　if(lang == 'zh'){
+        this.currentTabHeader = 'header-en';
+        this.currentTabFooter = 'footer-en'
+        this.isLangCN = false
+  　　}else{
+        this.currentTabHeader = 'header-en';
+        this.currentTabFooter = 'footer-en'
+        this.isLangCN = false
+  　　};
     Bus.$on('showNav', (status)=> {
       this.isHide = !status;
     });
   },
   components: {
-    appHeader,
+   'header-cn': appHeaderCN,
+   'header-en': appHeaderEN,
     appNavigation,
-    appFooter
+    'footer-cn': appFooterCN,
+    'footer-en': appFooterEN
   },
 }
 </script>

@@ -65,6 +65,17 @@ body {
     background-image: url(~assets/images/button.png);
     background-image: -webkit-image-set(url(~assets/images/button.png) 1x,url(~assets/images/button@2x.png) 2x);
     background-size: cover;
+	}
+	.topbar-button.en {
+    float: right;
+    width: 120px;
+    height: 48px;
+    margin-top: 30px;
+    opacity: 1;
+    cursor: pointer;
+    background-image: url(~assets/images/en/buy-btn.png);
+    background-image: -webkit-image-set(url(~assets/images/en/buy-btn.png) 1x,url(~assets/images/en/buy-btn@2x.png) 2x);
+    background-size: cover;
   }
 }
 

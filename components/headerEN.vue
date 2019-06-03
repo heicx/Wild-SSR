@@ -1,0 +1,42 @@
+<template>
+	<div class="header-topbar">
+		<div class="container clearfix">
+      <router-link class="topbar-logo" to='/' tag='a'></router-link>
+      <a class="topbar-button en" href="https://mall.jd.com/index-1000187701.html" target="_blank"></a>
+			<div class="topbar-tabs">
+				<router-link v-for='(item, index) in list' :key='index' :class='{"active": item.alias.indexOf($route.name) > -1}' :to='item.link' tag='a'>{{item.name}}{{$route.test}}</router-link>
+      </div>
+		</div>
+	</div>
+</template>
+
+<script>
+export default {
+	data() {
+		return {
+			list: [
+				{
+					name: 'Home',
+					alias: 'index',
+					link: '/'
+				},
+				// {
+				// 	name: '产品技术',
+				// 	alias: ['tech', 'spec'],
+				// 	link: '/tech'
+				// },
+				// {
+				// 	name: '在线商城',
+				// 	alias: 'shop',
+				// 	link: '/shop'
+        // },
+        // {
+				// 	name: '关于我们',
+				// 	alias: 'about',
+				// 	link: '/about'
+				// },
+			]
+		}
+	},
+}
+</script>

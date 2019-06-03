@@ -12,6 +12,7 @@
 
 <script>
 export default {
+	props: ['isLangCN'],
 	data() {
 		return {
 			list: [
@@ -37,6 +38,6 @@ export default {
 				// },
 			]
 		}
-	}
+	},
 }
 </script>
