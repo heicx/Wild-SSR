@@ -32,9 +32,9 @@ export default {
     var lang = (navigator.systemLanguage ? navigator.systemLanguage : navigator.language);
     var lang = lang.substr(0, 2);
   　　if(lang == 'zh'){
-        this.currentTabHeader = 'header-en';
-        this.currentTabFooter = 'footer-en'
-        this.isLangCN = false
+        this.currentTabHeader = 'header-cn';
+        this.currentTabFooter = 'footer-cn'
+        this.isLangCN = true;
   　　}else{
         this.currentTabHeader = 'header-en';
         this.currentTabFooter = 'footer-en'

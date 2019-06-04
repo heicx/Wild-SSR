@@ -75,7 +75,7 @@ export default {
 }
 
 .home-img-1 {
-  height: 1548px;
+  height: 1400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -85,7 +85,7 @@ export default {
 }
 
 .home-img-2 {
-  height: 1367px;
+  height: 1167px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,9 +95,9 @@ export default {
 }
 
 .home-img-3 {
-  height: 900px;
+  height: 760px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 57%;
   background-size: cover;
   background-color: #fff;
   background-image: url(~assets/images/en/home-img-3.jpg);
@@ -105,9 +105,9 @@ export default {
 }
 
 .home-img-4 {
-  height: 901px;
+  height: 724px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 58%;
   background-size: cover;
   background-color: #fff;
   background-image: url(~assets/images/en/home-img-4.jpg);
@@ -115,7 +115,7 @@ export default {
 }
 
 .home-img-5 {
-  height: 900px;
+  height: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,9 +125,9 @@ export default {
 }
 
 .home-img-6 {
-  height: 943px;
+  height: 734px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 56%;
   background-size: cover;
   background-color: #fff;
   background-image: url(~assets/images/en/home-img-6.jpg);
@@ -135,7 +135,7 @@ export default {
 }
 
 .home-img-7 {
-  height: 900px;
+  height: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,7 +145,7 @@ export default {
 }
 
 .home-img-8 {
-  height: 804px;
+  height: 704px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -155,7 +155,7 @@ export default {
 }
 
 .home-img-9 {
-  height: 951px;
+  height: 900px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,9 +165,9 @@ export default {
 }
 
 .home-img-10 {
-  height: 1843px;
+  height: 1334px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 66%;
   background-size: cover;
   background-color: #fff;
   background-image: url(~assets/images/en/home-img-10.jpg);
