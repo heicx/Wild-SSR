@@ -13,69 +13,107 @@ body {
 */
 .app-wrap .header-topbar {
 	width: 100%;
-	background: #ff0000;
+  background: #fff;
+  border-bottom: 1px solid #dadada82;
 }
 
 .header-topbar .container {
-	width: 1200px;
-	height: 110px;
+	width: 1220px;
+	height: 100px;
 	margin: 0 auto;
 	.topbar-logo {
 		float: left;
-		background: url(~assets/images/logo@2x.png) no-repeat 50%;
+		background: url(~assets/images/home/logo@2x.png) no-repeat 50%;
 		background-size: cover;
-		width: 166px;
-		height: 39px;
-		margin-top: 35px;
+		width: 180px;
+		height: 100px;
 	}
 	.topbar-tabs {
 		float: right;
-		height: 110px;
-		line-height: 110px;
-		font-size: $fontSize16;
-		a {
-			display: inline-block;
-			margin-right: 96px;
+		height: 100px;
+		line-height: 100px;
+    font-size: $fontSize16;
+    .item-name {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 80px;
+      // margin-right: 108px;
+      margin-right: 55px;
+      color: #7f7f7f;
       cursor: pointer;
-      color: #fff;
-      opacity: .5;
 			&.active {
         cursor: pointer;
-        color: #fff;
-        opacity: 1;
-				font-weight: bold;
+        color: #ea3323;
+        font-weight: bold;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          border-bottom: 6px solid #ea3323;
+          left: 0;
+          bottom: 0;
+          font-weight: bold;
+        }
 			}
 			&:hover {
-				cursor: pointer;
-        color: #fff;
-        opacity: 1;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ea3323;
 			}
 			&:last-child {
-				margin-right: 114px;
+				margin-right: 0;
+      }
+      .sub-items {
+        position: absolute;
+        top: 100px;
+        height: 45px;
+        left: -50px;
+        width: 182px;
+        border: 1px solid #dee0e5;
+        border-top: none;
+        padding-bottom: 22px;
+        border-radius: 0 0 8px 8px;
+        font-size: 16px;
+        text-align: center;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .15s ease-out;
+        cursor: auto;
+        z-index: 5;
+        &.active {
+          visibility: visible;
+          opacity: 1;
+        }
+        .item-wrap {
+          position: absolute;
+          top: 15px;
+          left: 50%;
+          width: 100%;
+          transform: translate(-50%, -50%);
+          background: #fff;
+        }
+        .item {
+          display: block;
+          line-height: 1;
+          color: #7f7f7f;
+          margin-bottom: 18px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &.active {
+            cursor: pointer;
+            color: #ea3323;
+            font-weight: bold;
+          }
+          &:hover {
+            cursor: pointer;
+            color: #ea3323;
+          }
+        }
       }
     }
-  }
-  .topbar-button {
-    float: right;
-    width: 123px;
-    height: 52px;
-    margin-top: 30px;
-    opacity: 1;
-    cursor: pointer;
-    background-image: url(~assets/images/button.png);
-    background-image: -webkit-image-set(url(~assets/images/button.png) 1x,url(~assets/images/button@2x.png) 2x);
-    background-size: cover;
-	}
-	.topbar-button.en {
-    float: right;
-    width: 120px;
-    height: 48px;
-    margin-top: 30px;
-    opacity: 1;
-    cursor: pointer;
-    background-image: url(~assets/images/en/buy-btn.png);
-    background-image: -webkit-image-set(url(~assets/images/en/buy-btn.png) 1x,url(~assets/images/en/buy-btn@2x.png) 2x);
-    background-size: cover;
   }
 }
 
@@ -84,21 +122,21 @@ body {
 */
 .app-wrap .footer {
 	width: 100%;
-	background-color:#ff0000;
+	background-color:#ea3323;
 }
 
 .footer .container {
 	position: relative;
-	width: 1200px;
-	padding-bottom: 40px;
-	margin: 0 auto;
+	width: 1220px;
+	padding: 40px 0 180px;
+  margin: 0 auto;
+  &.footer-reducer {
+    padding: 40px 0 40px;
+  }
 }
 
 .footer {
 	text-align: center;
-	.footer-share {
-		// margin-bottom: 45px;
-	}
 	.share-icons {
 		display: inline-block;
 		&.wechat {
@@ -107,45 +145,14 @@ body {
 			margin-right: 50px;
 			background-position: center;
 			background-size: cover;
-			// background-image: url(~assets/images/wechat_unfocus.png);
-			// background-image: -webkit-image-set(url(~assets/images/wechat_unfocus.png) 1x,url(~assets/images/wechat_unfocus@2x.png) 2x);
-			&.active {
-				// background-image: url(~assets/images/wechat_focus.png);
-				// background-image: -webkit-image-set(url(~assets/images/wechat_focus.png) 1x,url(~assets/images/wechat_focus@2x.png) 2x);
-			}
 		}
 		&.weibo {
 			width: 40px;
 			height: 37px;
 			background-position: center;
 			background-size: cover;
-			// background-image: url(~assets/images/weibo_unfocus.png);
-			// background-image: -webkit-image-set(url(~assets/images/weibo_unfocus.png) 1x,url(~assets/images/weibo_unfocus@2x.png) 2x);
-			&.active {
-				// background-image: url(~assets/images/weibo_focus.png);
-				// background-image: -webkit-image-set(url(~assets/images/weibo_focus.png) 1x,url(~assets/images/weibo_focus@2x.png) 2x);
-			}
 		}
 	}
-	// .footer-qrcode {
-	// 	position: absolute;
-	// 	width: 317px;
-	// 	height: 305px;
-	// 	top: 10px;
-	// 	right: 0;
-	// 	left: -450px;
-	// 	margin: 0 auto;
-	// 	opacity: 0;
-	// 	transition: all .15s ease-out;
-	// 	z-index: 15;
-	// 	background-position: center;
-	// 	background-size: cover;
-	// 	background-image: url(~assets/images/qr-code.png);
-	// 	background-image: -webkit-image-set(url(~assets/images/qr-code.png) 1x,url(~assets/images/qr-code@2x.png) 2x);
-	// 	&.footer-qrcode-anim {
-	// 		opacity: 1;
-	// 	}
-	// }
 	.footer-title {
     display: inline-block;
 		color: #fff;
