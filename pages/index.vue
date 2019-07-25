@@ -30,28 +30,28 @@ export default {
   layout: 'common',
   data() {
     return {
-      isShowTips: !localStorage.getItem('_tips'),
+      // isShowTips: !localStorage.getItem('_tips'),
     }
   },
   mounted() {
   },
   methods: {
-    tipsConfirm(status) {
-      if (!!status) {
-        this.isShowTips = false;
-        localStorage.setItem('_tips', true);
-      } else if (navigator.userAgent.indexOf("MSIE") > 0) {
-        window.opener = null;
-        window.close();
-      } else if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("Chrome") != -1) {
-        window.location.href = 'about:blank';
-        window.close();
-      } else {
-        window.opener = null;
-        window.open('', '_self', '');
-        window.close();
-      }
-    }
+    // tipsConfirm(status) {
+    //   if (!!status) {
+    //     this.isShowTips = false;
+    //     localStorage.setItem('_tips', true);
+    //   } else if (navigator.userAgent.indexOf("MSIE") > 0) {
+    //     window.opener = null;
+    //     window.close();
+    //   } else if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("Chrome") != -1) {
+    //     window.location.href = 'about:blank';
+    //     window.close();
+    //   } else {
+    //     window.opener = null;
+    //     window.open('', '_self', '');
+    //     window.close();
+    //   }
+    // }
   },
   components: {
   },

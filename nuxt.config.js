@@ -2,7 +2,6 @@ const pkg = require('./package')
 
 
 module.exports = {
-  mode: 'spa',
   server: {
     port: 82,
     host: '0.0.0.0'
@@ -11,7 +10,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'vvild 小野雾化电子烟-小野官方网站',
+    title: 'vvild 小野雾化电子烟 - 小野官方网站',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' },
