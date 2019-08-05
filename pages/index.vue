@@ -1,13 +1,15 @@
 <template>
 <div id="app" class="app-wrap">
   <section class="home-wrap">
-    <div class="home-img-1"></div>
+    <div class="home-img-1">
+      <div class="mask">
+        特别提醒：本产品含有尼古丁，未成年人禁止使用，非吸烟者请勿尝试
+      </div>
+      <a href="https://mall.jd.com/index-1000187701.html" target="_blank" class="official-btn"></a>
+    </div>
     <div class="home-img-2"></div>
     <div class="home-img-3"></div>
     <div class="home-img-4"></div>
-    <div class="home-img-5"></div>
-    <div class="home-img-6"></div>
-    <div class="home-img-7"></div>
     <!-- <div class="confirm-tips" v-if="isShowTips">
       <div class="confirm-text"></div>
       <div class="confirm-btn">
@@ -15,7 +17,6 @@
         <a class="btn-no" @click="tipsConfirm()"></a>
       </div>
     </div> -->
-    <!-- <div class="mask" v-if="isShowTips"></div> -->
   </section>
   <div class="footer-menu">
     <div class="content">
@@ -60,17 +61,29 @@ export default {
 
 <style lang="scss" scoped>
 .home-img-1 {
-  height: 760px;
+  position: relative;
+  margin-top: -1px;
+  height: 1174px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #fff;
   background-image: url(~assets/images/home/home-img-1.jpg);
   background-image: -webkit-image-set(url(~assets/images/home/home-img-1.jpg) 1x,url(~assets/images/home/home-img-1@2x.jpg) 2x);
+  .official-btn {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 160px;
+    height: 45px;
+    transform: translate(75%, 152%);
+  }
 }
 
 .home-img-2 {
-  height: 850px;
+  height: 1145px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,7 +93,7 @@ export default {
 }
 
 .home-img-3 {
-  height: 900px;
+  height: 721px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -90,43 +103,13 @@ export default {
 }
 
 .home-img-4 {
-  height: 900px;
+  height: 1387px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #fff;
   background-image: url(~assets/images/home/home-img-4.jpg);
   background-image: -webkit-image-set(url(~assets/images/home/home-img-4.jpg) 1x,url(~assets/images/home/home-img-4@2x.jpg) 2x);
-}
-
-.home-img-5 {
-  height: 1400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  background-image: url(~assets/images/home/home-img-5.jpg);
-  background-image: -webkit-image-set(url(~assets/images/home/home-img-5.jpg) 1x,url(~assets/images/home/home-img-5@2x.jpg) 2x);
-}
-
-.home-img-6 {
-  height: 723px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  background-image: url(~assets/images/home/home-img-6.jpg);
-  background-image: -webkit-image-set(url(~assets/images/home/home-img-6.jpg) 1x,url(~assets/images/home/home-img-6@2x.jpg) 2x);
-}
-
-.home-img-7 {
-  height: 862px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #fff;
-  background-image: url(~assets/images/home/home-img-7.jpg);
-  background-image: -webkit-image-set(url(~assets/images/home/home-img-7.jpg) 1x,url(~assets/images/home/home-img-7@2x.jpg) 2x);
 }
 
 .prohibit {
@@ -191,18 +174,23 @@ export default {
 }
 
 .mask {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  line-height: 60px;
+  height: 60px;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
   overflow: hidden;
   outline: 0;
   -webkit-overflow-scrolling: touch;
   background-color: rgb(0, 0, 0);
   filter: alpha(opacity=60);
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 30;
 }
 
 .footer-menu {
@@ -213,8 +201,11 @@ export default {
   width: 100%;
   height: 140px;
   z-index: 20;
-  background: #fff;
-  border-top: 1px solid #dfdfe2;
+  background-image: url(~assets/images/home/home-footer-cover.png);
+  background-image: -webkit-image-set(url(~assets/images/home/home-footer-cover.png) 1x,url(~assets/images/home/home-footer-cover@2x.png) 2x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   .content {
     position: relative;
     width: 1220px;
@@ -225,8 +216,8 @@ export default {
       width: 100%;
       height: 100%;
       content: "";
-      background-image: url(~assets/images/home/home-footer-menu.jpg);
-      background-image: -webkit-image-set(url(~assets/images/home/home-footer-menu.jpg) 1x,url(~assets/images/home/home-footer-menu@2x.jpg) 2x);
+      background-image: url(~assets/images/home/home-footer-menu.png);
+      background-image: -webkit-image-set(url(~assets/images/home/home-footer-menu.png) 1x,url(~assets/images/home/home-footer-menu@2x.png) 2x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

@@ -3,6 +3,9 @@
 		<div class="container clearfix">
       <router-link class="topbar-logo" to='/' tag='a'></router-link>
 			<div class="topbar-tabs">
+        <div class="item-name hidden">
+          <a href="/news">媒体中心</a>
+        </div>
 				<router-link
           v-for='(item, index) in list'
           :key='index'
@@ -65,12 +68,12 @@ export default {
             path: ['aboutus', 'joinus'],
             subItems: [
               {
-                name: '小野的故事',
+                name: '公司介绍',
                 link: '/aboutus',
                 path: 'aboutus',
               },
               {
-                name: '加入小野',
+                name: '加入我们',
                 link: '/joinus',
                 path: 'joinus',
               },
@@ -78,13 +81,13 @@ export default {
           },
 					link: '/aboutus'
         },
-        // {
-				// 	name: '帮助中心',
-				// 	alias: {
-        //     path: 'help'
-        //   },
-				// 	link: '/help'
-				// },
+        {
+					name: '帮助与支持',
+					alias: {
+            path: ['help-knowledge', 'help-question', 'help-service'],
+          },
+					link: '/help/question'
+				},
 			]
 		}
   },

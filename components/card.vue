@@ -1,9 +1,7 @@
 <template>
-  <div class="content-wrap">
-    <div class="card">
-      <h2 class="card-title">{{title}}</h2>
-      <slot name='card-list'></slot>
-    </div>
+  <div class="card-wrap" :style="{'width': `${width}px`}">
+    <h2 class="card-title">{{title}}</h2>
+    <slot name='card-list'></slot>
   </div>
 </template>
 
@@ -14,7 +12,18 @@ export default {
     }
   },
   props: {
+    width: {
+      type: Number,
+      default: 1220,
+    },
     title: String
+  },
+  computed: {
+    style: function () {
+      return {
+        width: `${this.width}px`
+      }
+    }
   },
   methods: {
   }
@@ -22,13 +31,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content-wrap {
-    width: 1220px;
-    min-width: 1220px;
-    margin: 0 auto;
-}
-
-.card {
+.card-wrap {
+  margin: 0 auto;
   border: 1px solid #dcdcdc;
   border-radius: 6px;
   .card-title {
