@@ -7,7 +7,9 @@
       </div>
       <a href="https://mall.jd.com/index-1000187701.html" target="_blank" class="official-btn"></a>
     </div>
-    <div class="home-img-2"></div>
+    <div class="home-img-2">
+      <span class="text-hidden">陈冠希</span>
+    </div>
     <div class="home-img-3"></div>
     <div class="home-img-4"></div>
     <!-- <div class="confirm-tips" v-if="isShowTips">
@@ -83,6 +85,7 @@ export default {
 }
 
 .home-img-2 {
+  position: relative;
   height: 1145px;
   background-repeat: no-repeat;
   background-position: center;
@@ -90,6 +93,11 @@ export default {
   background-color: #fff;
   background-image: url(~assets/images/home/home-img-2.jpg);
   background-image: -webkit-image-set(url(~assets/images/home/home-img-2.jpg) 1x,url(~assets/images/home/home-img-2@2x.jpg) 2x);
+  .text-hidden {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 .home-img-3 {

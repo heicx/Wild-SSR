@@ -82,6 +82,20 @@ export default {
 					link: '/aboutus'
         },
         {
+					name: '专卖店计划',
+					alias: {
+            path: 'entityshop'
+          },
+					link: '/entityshop'
+        },
+        {
+					name: '招商加盟',
+					alias: {
+            path: 'investment'
+          },
+					link: '/investment'
+				},
+        {
 					name: '帮助与支持',
 					alias: {
             path: ['help-knowledge', 'help-question', 'help-service'],
