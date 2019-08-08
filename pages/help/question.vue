@@ -78,7 +78,7 @@
               </li>
               <li>
                 <h2 class="item-title">15. vvild 小野 V0 烟弹储存保质期有多长？</h2>
-                <h4 class="item-text">未开封的验单储存保质期一年，建议开封后尽快使用，以保证口感。</h4>
+                <h4 class="item-text">未开封的烟弹储存保质期一年，建议开封后尽快使用，以保证口感。</h4>
               </li>
               <li>
                 <h2 class="item-title">16. 一颗 vvild 小野 V0 烟弹相当于几包烟？一颗烟弹能抽多少口？</h2>

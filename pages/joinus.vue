@@ -61,7 +61,7 @@
                       <li>5、具备跨团队、跨地域等项目交付经验者佳；</li>
                       <li>6、有较强的系统思考和总结能力，推动性强。</li>
                     </ul>
-                    <h4 class="text">工作地点：北京望京</h4>
+                    <h4 class="text">工作地点：深圳南山区</h4>
                     <h4 class="text">请将简历和作品集发送至：<a href="mailto:mkt@vvild.cn">mkt@vvild.cn</a></h4>
                   </div>
                 </li>
