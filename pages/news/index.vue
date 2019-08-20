@@ -52,7 +52,7 @@ export default {
   }
   .news-title {
     cursor: pointer;
-    width: 580px;
+    width: 560px;
     font-size: 14px;
     line-height: 26px;
     word-break: break-all;

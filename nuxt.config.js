@@ -62,6 +62,6 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {},
-    publicPath: '//vvild-static.tcka.cn/resources/'
+    publicPath: '//static.vvild.cn/resources/'
   },
 }
