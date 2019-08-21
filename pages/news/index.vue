@@ -30,6 +30,11 @@ export default {
       news: NEWS.list
     }
   },
+  head () {
+    return {
+      title: `${this.title} - 小野官方网站`
+    }
+  },
   components: {
     Card
   }

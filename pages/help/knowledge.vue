@@ -73,15 +73,14 @@ export default {
   data () {
     return {
       supportList: [
-        // {
-        //   name: '常见问题',
-        //   path: '/help/knowledge',
-        //   active: true,
-        // },
+        {
+          name: '常见问题',
+          path: '/help/knowledge',
+          active: true,
+        },
         {
           name: 'V0 产品答疑',
           path: '/help/question',
-          active: true,
         },
         {
           name: '客服中心',
@@ -89,6 +88,11 @@ export default {
         }
       ],
       title: '常见问题',
+    }
+  },
+  head () {
+    return {
+      title: `${this.title} - 小野官方网站`
     }
   },
   components: {

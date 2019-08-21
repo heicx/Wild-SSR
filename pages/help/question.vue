@@ -91,7 +91,7 @@
                 <h4 class="item-text ok">符合国家香料香精《烟用香精标准》</h4>
                 <h4 class="item-text ok">符合国家食品安全标准 “急性毒性试验”</h4>
                 <h4 class="item-text ok">符合国家食品安全标准的 “食品添加剂中重金属试验”</h4>
-                <h4 class="item-text ok">符合国家食品安全标准 “视频中邻苯二甲酸酯的测定”</h4>
+                <h4 class="item-text ok">符合国家食品安全标准 “食品中邻苯二甲酸酯的测定”</h4>
                 <h4 class="item-text ok">符合国家食品安全标准 “食品微生物学检验 菌落总数测定”</h4>
                 <h4 class="item-text ok">符合国家食品安全标准 “食品微生物学检验 霉菌和酵母计数”</h4>
                 <h4 class="item-text ok">符合国家食品安全标准 “食品卫生微生物学检验 大肠菌群测定”</h4>
@@ -128,6 +128,11 @@ export default {
         }
       ],
       title: 'vvild 小野 · 雾化电子烟 V0 产品相关答疑',
+    }
+  },
+  head () {
+    return {
+      title: `${this.title} - 小野官方网站`
     }
   },
   components: {

@@ -45,6 +45,11 @@ export default {
       }
     }
   },
+  head () {
+    return {
+      title: `${this.news.title} - 小野官方网站`
+    }
+  },
   components: {
     Card
   }
@@ -59,15 +64,15 @@ export default {
   text-align: center;
   padding: 20px 0 ;
   .news-contanier {
-    padding: 25px 25px;
+    padding: 25px 50px;
   }
   .news-title {
     float: left;
     margin-right: 20px;
   }
   .news-item {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 1.8;
     word-break: break-all;
     text-align: left;
     color: #666;

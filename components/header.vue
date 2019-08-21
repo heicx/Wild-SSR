@@ -3,9 +3,9 @@
 		<div class="container clearfix">
       <router-link class="topbar-logo" to='/' tag='a'></router-link>
 			<div class="topbar-tabs">
-        <div class="item-name hidden">
+        <!-- <div class="item-name hidden">
           <a href="/news">媒体中心</a>
-        </div>
+        </div> -->
 				<router-link
           v-for='(item, index) in list'
           :key='index'
@@ -94,7 +94,14 @@ export default {
             path: 'investment'
           },
 					link: '/investment'
-				},
+        },
+        {
+					name: '新闻动态',
+					alias: {
+            path: ['news', 'news-id']
+          },
+					link: '/news'
+        },
         {
 					name: '帮助与支持',
 					alias: {
@@ -110,6 +117,7 @@ export default {
       this.showMenu = false;
     },
     onMouseEnterItem (name) {
+      console.log(this.$route.name)
       if (name.indexOf('aboutus') > -1) {
         this.showMenu = true;
       } else {

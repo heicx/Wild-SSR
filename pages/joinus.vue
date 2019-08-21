@@ -121,6 +121,11 @@ export default {
       ]
     }
   },
+  head () {
+    return {
+      title: `${this.title} - 小野官方网站`
+    }
+  },
   components: {
     Card,
     SideBar,

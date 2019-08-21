@@ -1,6 +1,9 @@
 <template>
     <ul class="investment-wrap">
-      <li class="investment-img-1"></li>
+      <li class="investment-img-1">
+        <h3 class="text-opc">vvild 小野经销商加盟</h3>
+        <h5 class="text-opc">2019 年，vvild 小野是你最应该参与的创业项目</h5>
+      </li>
       <li class="investment-img-2"></li>
       <li class="investment-img-3"></li>
       <li class="investment-img-4"></li>
@@ -9,13 +12,22 @@
 
 <script>
 export default {
-  layout: 'common'
+  layout: 'common',
+  head () {
+    return {
+      title: '招商加盟 - 小野官方网站'
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .investment-wrap {
   background: #fff;
+}
+
+.text-opc {
+  opacity: 0;
 }
 
 .investment-img-1 {
