@@ -105,7 +105,7 @@ export default {
   },
   head () {
     return {
-      title: '首页 - 小野官方网站'
+      title: 'vvild 小野雾化电子烟 - 小野官方网站'
     }
   },
   mounted() {
