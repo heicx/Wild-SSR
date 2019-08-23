@@ -21,9 +21,9 @@
 				<li>
 					<a href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 备 19018410 号 - 1	</a>
 				</li>
-				<!-- <li>
-					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037227" target="_blank">京公网安备 11010502037227 号</a>
-				</li> -->
+				<li>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502038671" target="_blank">京公网安备 11010502038671 号</a>
+				</li>
 			</ul>
 		</div>
 	</div>
