@@ -1,4 +1,9 @@
 
+import Vue from 'vue'
+
+const VueVideoPlayer = require('vue-video-player/dist/ssr')
+Vue.use(VueVideoPlayer)
+
 export default ({ app }) => {
  if (process.env.NODE_ENV !== 'production') return
 

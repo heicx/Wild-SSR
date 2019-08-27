@@ -1,6 +1,6 @@
 <template>
   <div class="not-found">
-    抱歉，页面载入失败 ...
+    不要那么野，小野一下就好 ...
   </div>
 </template>
 
@@ -13,9 +13,11 @@ export default {
 
 <style lang="scss" scoped>
 .app-wrap .not-found {
-    min-height: 650px;
-    line-height: 650px;
+    min-height: 680px;
+    line-height: 680px;
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;
+    color: #ff0400;
+    opacity: .3;
 }
 </style>

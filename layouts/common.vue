@@ -17,11 +17,11 @@ export default {
   },
   computed: {
     isHomePage () {
-      console.log(this.$route.name)
       return this.$route.name === 'index'
     }
   },
   created() {
+    console.log('不要那么野，小野一下就好 ...');
   },
   components: {
     appHeader,

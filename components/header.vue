@@ -3,16 +3,14 @@
 		<div class="container clearfix">
       <router-link class="topbar-logo" to='/' tag='a'></router-link>
 			<div class="topbar-tabs">
-        <!-- <div class="item-name hidden">
-          <a href="/news">媒体中心</a>
-        </div> -->
+        <a href="https://xiaoyeyanju.tmall.com" target="_blank" class="buy-btn"></a>
 				<router-link
           v-for='(item, index) in list'
           :key='index'
           :to='item.link'
           class="item-name"
           :class='{"active": item.alias.path.indexOf($route.name) > -1 }'
-          @mouseenter.native="onMouseEnterItem(item.link)"
+          @mouseenter.native="onMouseEnterItem(item.alias.path)"
           @mouseleave.native="onMouseLeaveItem($event)"
           tag='div'
         >
@@ -20,7 +18,7 @@
           <div
             v-if="!!item.alias.subItems"
             class="sub-items"
-            :class="{'active': showMenu}"
+            :class="{'active': item.alias.path.indexOf(subItemName) > -1}"
           >
             <div class="item-wrap">
               <router-link
@@ -46,7 +44,7 @@
 export default {
 	data() {
 		return {
-      showMenu: false,
+      subItemName: '',
 			list: [
 				{
 					name: '首页',
@@ -58,9 +56,28 @@ export default {
 				{
 					name: '产品',
 					alias: {
-            path: 'product'
+            path: ['product-v0', 'product-v1'],
+            subItems: [
+              {
+                name: '雾化电子烟 V1',
+                link: '/product-v1',
+                path: 'product-v1',
+              },
+              {
+                name: '雾化电子烟 V0',
+                link: '/product-v0',
+                path: 'product-v0',
+              },
+            ],
           },
-					link: '/product'
+					link: '/product-v1'
+        },
+        {
+					name: '视频中心',
+					alias: {
+            path: 'media',
+          },
+					link: '/media'
 				},
 				{
 					name: '关于我们',
@@ -82,18 +99,23 @@ export default {
 					link: '/aboutus'
         },
         {
-					name: '专卖店计划',
-					alias: {
-            path: 'entityshop'
-          },
-					link: '/entityshop'
-        },
-        {
 					name: '招商加盟',
 					alias: {
-            path: 'investment'
+            path: ['entityshop', 'investment'],
+            subItems: [
+              {
+                name: '专卖店计划',
+                link: '/entityshop',
+                path: 'entityshop'
+              },
+              {
+                name: '招商加盟',
+                link: '/investment',
+                path: 'investment',
+              }
+            ]
           },
-					link: '/investment'
+					link: '/entityshop'
         },
         {
 					name: '新闻动态',
@@ -114,18 +136,15 @@ export default {
   },
   methods: {
     closeMenu () {
-      this.showMenu = false;
+      // this.showMenu = false;
     },
-    onMouseEnterItem (name) {
-      console.log(this.$route.name)
-      if (name.indexOf('aboutus') > -1) {
-        this.showMenu = true;
-      } else {
-        this.showMenu = false;
+    onMouseEnterItem (items) {
+      if (items) {
+        this.subItemName = items[0];
       }
     },
     onMouseLeaveItem (e) {
-      this.showMenu = false;
+      this.subItemName = '';
     }
   }
 }
