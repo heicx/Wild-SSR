@@ -106,7 +106,7 @@ export default {
       // 1566878399000
       const timestamp = (new Date()).valueOf();
 
-      if (timestamp < 1566878399000) {
+      if (timestamp > 1566878399000) {
         this.isCDN = true;
         this.videoUrl = this.videos.cdnUrl;
       } else {
