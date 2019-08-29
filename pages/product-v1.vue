@@ -76,7 +76,12 @@
     </ul>
     <div class="video-wrap" :class="{'active': videoShowStatus}">
       <div class="video-content">
-        <video v-if="isCDN" :src="videoUrl" controls></video>
+        <video
+          v-if="isCDN"
+          :src="videoUrl"
+          ref="videoEle"
+          controls
+        ></video>
         <iframe v-if="!isCDN" height='100%' width='100%' :src='videoUrl' frameborder=0></iframe>
       </div>
       <div class="btn-close" @click="closeVideo()"></div>
@@ -113,6 +118,10 @@ export default {
         this.isCDN = false;
         this.videoUrl = this.videos.youkuUrl;
       }
+
+      setTimeout(_ => {
+        this.$refs.videoEle.play();
+      });
       
       this.videoShowStatus = !this.videoShowStatus;
     },
