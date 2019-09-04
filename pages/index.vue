@@ -1,7 +1,14 @@
 <template>
   <div class="product-v1-wrap">
     <ul>
-      <li class="product-v1-img-1"></li>
+      <li class="product-v1-img-1">
+        <ul class="text-opc">
+          <li>不要那么野，”小野一下就好“</li>
+          <li>vvild 小野雾化电子烟 V1/V1 Plus 去除焦油、多种口味、澎湃雾量、真烟口感</li>
+          <li>套装售价：￥299 起</li>
+          <li>特别提醒：本品含有尼古丁，未成年人禁止使用，非吸烟者请勿尝试</li>
+        </ul>
+      </li>
       <li class="product-v1-img-2" @click="playVideo()"></li>
       <div class="product-v1-img-3-wrap">
         <div class="product-honor-img"></div>
@@ -62,15 +69,71 @@
             </li>
           </ul>
         </div>
+
+        <ul class="text-opc">
+          <li>屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
+          <li>电子烟告别 ”乡村风“ 时代</li>
+          <li>让电子烟行业终于迎来了真正的工业设计</li>
+          <li>航空级铝合金打造的极简主义形体</li>
+          <li>三种颜色，一样出色</li>
+          <li>优雅内敛，作风沉稳，电子烟设计上的 ”中国大队长“</li>
+        </ul>
       </div>
-      <li class="product-v1-img-4"></li>
-      <li class="product-v1-img-5"></li>
-      <li class="product-v1-img-6"></li>
-      <li class="product-v1-img-7"></li>
-      <li class="product-v1-img-8"></li>
-      <li class="product-v1-img-9"></li>
+      <li class="product-v1-img-4">
+        <ul class="text-opc">
+          <li>意味深长的禁忌符号光孔，随呼吸明灭之际，欲语还休</li>
+          <li>压抑时不妨放肆小野一下，忘形时难免触目克制三分</li>
+        </ul>
+      </li>
+      <li class="product-v1-img-5">
+        <ul class="text-opc">
+          <li>细细的红线，暖暖的保护</li>
+          <li>目前 ”细红线“ 外观设计和 ”卫生烟嘴帽“ 功能设计，为 vvild 小野雾化电子烟 V1 Plus 型号所独有</li>
+        </ul>
+      </li>
+      <li class="product-v1-img-6">
+        <ul class="text-opc">
+          <li>五重科技防护</li>
+          <li>油气分离技术</li>
+          <li>顶部密封圈</li>
+          <li>雾化器密封圈</li>
+          <li>独立冷凝槽结构</li>
+          <li>底部密封圈</li>
+          <li>体验拔群的超扁平人体工学烟嘴</li>
+          <li>完美对应吸入时的口型</li>
+          <li>最薄处仅 5.5 mm，嘴感更贴合，嘴型更优雅</li>
+          <li>加长双气道设计和双管结构</li>
+          <li>避免吸入时高温烫嘴</li>
+          <li>创新的 35 mm 加长气道设计，充分雾化的烟油口感更温柔</li>
+        </ul>
+      </li>
+      <li class="product-v1-img-7">
+        <ul class="text-opc">
+          <li>更多选择，重口不再难调</li>
+          <li>新增四种口味，每种都经过精心调制，不容错过</li>
+        </ul>
+      </li>
+      <li class="product-v1-img-8">
+        <ul class="text-opc">
+          <li>”防贪多“ 震动提醒设计</li>
+          <li>让身体满足，让心里有数</li>
+          <li>五分钟内吸到 15 口时，烟杆机身会轻微震动一下</li>
+          <li>提醒用户摄入的尼古丁含量已经大致相当于一根香烟</li>
+        </ul>
+      </li>
+      <li class="product-v1-img-9">
+        <ul class="text-opc">
+          <li>告别火机时代，体验防水纪元</li>
+          <li>IPX4 级的防水功能，可以让你在淋雨设置淋浴时，都放心使用</li>
+        </ul>
+      </li>
       <li class="product-v1-img-10"></li>
-      <li class="product-v1-img-11"></li>
+      <li class="product-v1-img-11">
+        <ul class="text-opc">
+          <li>”替烟“ 利器，一举消灭数百种危害</li>
+          <li>vvild 小野雾化电子烟 V1, V1 Plus 采用行业领先的低温雾化技术，不仅祛除了传统香烟在燃烧时产生的数百种有害、有毒和致癌物质，还几乎完美还原了传统香烟口感，在减少身体伤害的同时，也避免了口臭、牙黄、多痰烦恼</li>
+        </ul>
+      </li>
       <li class="product-v1-img-12"></li>
       <li class="product-v1-img-13"></li>
     </ul>
