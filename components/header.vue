@@ -3,6 +3,9 @@
 		<div class="container clearfix">
       <router-link class="topbar-logo" to='/' tag='a'></router-link>
 			<div class="topbar-tabs">
+        <div class="item-name text-hidden">
+          <a href="/cn/news">新闻动态</a>
+        </div>
         <a href="https://xiaoyeyanju.tmall.com" target="_blank" class="buy-btn"></a>
 				<router-link
           v-for='(item, index) in list'
@@ -117,13 +120,13 @@ export default {
           },
 					link: '/entityshop'
         },
-        {
-					name: '新闻动态',
-					alias: {
-            path: ['news', 'news-id']
-          },
-					link: '/news'
-        },
+        // {
+				// 	name: '新闻动态',
+				// 	alias: {
+        //     path: ['news', 'news-id']
+        //   },
+				// 	link: '/news'
+        // },
         {
 					name: '帮助与支持',
 					alias: {
@@ -149,3 +152,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.topbar-tabs .text-hidden {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+</style>
