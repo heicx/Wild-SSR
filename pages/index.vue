@@ -12,12 +12,18 @@
       <li class="product-v1-img-2" @click="playVideo()"></li>
       <div class="product-v1-img-3-wrap">
         <div class="product-honor-img"></div>
-        <div class="product-colorful"></div>
+        <div class="product-colorful">
+          <h2 class="title-1">航空级铝合金打造的极简主义形体</h2>
+          <h2 class="title-2">三种颜色，一样出色</h2>
+          <h4 class="sub-title">优雅内敛，作风沉稳，电子烟设计上的 “中国大队长”</h4>
+        </div>
         <div
           class="product-v1-img-3 carbon-black"
           :class="{'active': colorId === 'carbon-black'}"
         >
           <ul class="product-colors">
+            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
+            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
             <li
               v-for='(name, index) in colorBtnClass'
               :key='index'
@@ -32,6 +38,8 @@
           :class="{'active': colorId === 'the-thin-red-line'}"
         >
           <ul class="product-colors">
+            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
+            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
             <li
               v-for='(name, index) in colorBtnClass'
               :key='index'
@@ -46,6 +54,8 @@
           :class="{'active': colorId === 'bright-red'}"
         >
           <ul class="product-colors">
+            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
+            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
             <li
               v-for='(name, index) in colorBtnClass'
               :key='index'
@@ -60,6 +70,8 @@
           :class="{'active': colorId === 'blackish-green'}"
         >
           <ul class="product-colors">
+            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
+            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
             <li
               v-for='(name, index) in colorBtnClass'
               :key='index'
@@ -69,27 +81,16 @@
             </li>
           </ul>
         </div>
-
-        <ul class="text-opc">
-          <li>屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
-          <li>电子烟告别 ”乡村风“ 时代</li>
-          <li>让电子烟行业终于迎来了真正的工业设计</li>
-          <li>航空级铝合金打造的极简主义形体</li>
-          <li>三种颜色，一样出色</li>
-          <li>优雅内敛，作风沉稳，电子烟设计上的 ”中国大队长“</li>
-        </ul>
       </div>
       <li class="product-v1-img-4">
+        <h4 class="sub-title">压抑时不妨放肆小野一下，忘形时难免触目克制三分</h4>
         <ul class="text-opc">
           <li>意味深长的禁忌符号光孔，随呼吸明灭之际，欲语还休</li>
-          <li>压抑时不妨放肆小野一下，忘形时难免触目克制三分</li>
         </ul>
       </li>
       <li class="product-v1-img-5">
-        <ul class="text-opc">
-          <li>细细的红线，暖暖的保护</li>
-          <li>目前 ”细红线“ 外观设计和 ”卫生烟嘴帽“ 功能设计，为 vvild 小野雾化电子烟 V1 Plus 型号所独有</li>
-        </ul>
+        <h4 class="title">细细的红线，暖暖的保护</h4>
+        <h5 class="sub-title">* 目前 ”细红线“ 外观设计和 ”卫生烟嘴帽“ 功能设计，为 vvild 小野雾化电子烟 V1 Plus 型号所独有</h5>
       </li>
       <li class="product-v1-img-6">
         <ul class="text-opc">
@@ -108,30 +109,35 @@
         </ul>
       </li>
       <li class="product-v1-img-7">
-        <ul class="text-opc">
-          <li>更多选择，重口不再难调</li>
-          <li>新增四种口味，每种都经过精心调制，不容错过</li>
-        </ul>
+        <h3 class="title">更多选择，众口不再难调</h3>
+        <h4 class="sub-title">新增四种口味，每种都经过精心调制，不容错过</h4>
       </li>
       <li class="product-v1-img-8">
-        <ul class="text-opc">
-          <li>”防贪多“ 震动提醒设计</li>
-          <li>让身体满足，让心里有数</li>
-          <li>五分钟内吸到 15 口时，烟杆机身会轻微震动一下</li>
-          <li>提醒用户摄入的尼古丁含量已经大致相当于一根香烟</li>
+        <ul class="text">
+          <li class="title">“防贪多” 震动提醒设计</li>
+          <li class="title">让身体满足，让心里有数</li>
+          <li class="sub-title">五分钟内吸到 15 口时，烟杆机身会轻微震动一下</li>
+          <li class="sub-title">提醒用户摄入的尼古丁含量已经大致相当于一根香烟</li>
         </ul>
       </li>
       <li class="product-v1-img-9">
-        <ul class="text-opc">
-          <li>告别火机时代，体验防水纪元</li>
-          <li>IPX4 级的防水功能，可以让你在淋雨设置淋浴时，都放心使用</li>
+        <ul class="text">
+          <li class="title">告别火机时代，体验防水纪元</li>
+          <li class="sub-title-1">IPX4 级的防水功能，可以让你在淋雨甚至淋浴时，都放心使用</li>
+          <li class="sub-title-2">* IPX4 级防水功能，目前仅限于 vvild 小野雾化电子烟 V1 Plus 机型</li>
         </ul>
       </li>
-      <li class="product-v1-img-10"></li>
+      <li class="product-v1-img-10">
+        <ul class="text">
+          <li class="title">贴心配件，时刻亮眼</li>
+        </ul>
+      </li>
       <li class="product-v1-img-11">
-        <ul class="text-opc">
-          <li>”替烟“ 利器，一举消灭数百种危害</li>
-          <li>vvild 小野雾化电子烟 V1, V1 Plus 采用行业领先的低温雾化技术，不仅祛除了传统香烟在燃烧时产生的数百种有害、有毒和致癌物质，还几乎完美还原了传统香烟口感，在减少身体伤害的同时，也避免了口臭、牙黄、多痰烦恼</li>
+        <ul class="text">
+          <li class="title">“替烟” 利器，一举消灭数百种危害</li>
+          <li class="sub-title">vvild 小野雾化电子烟 V1, V1 Plus 采用行业领先的低温雾化技术，不仅祛除</li>
+          <li class="sub-title">了统香烟在燃烧时产生的数百种有害、有毒和致癌物质，还几乎完美还原了</li>
+          <li class="sub-title">传统香烟口感，在减少身体伤害的同时，也避免了口臭、牙黄、多痰烦恼</li>
         </ul>
       </li>
       <li class="product-v1-img-12"></li>
@@ -334,6 +340,23 @@ export default {
     background-size: cover;
     background-image: url(~assets/images/product-v1/product-v1-img-3-colorful@2x.png);
     background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-3-colorful@2x.png) 1x,url(~assets/images/product-v1/product-v1-img-3-colorful@2x.png) 2x);
+    .title-1, .title-2, .sub-title {
+      text-align: center;
+    }
+    .title-1, .title-2 {
+      font-size: 54px;
+      color: #474748;
+      font-weight: bolder;
+      margin-top: 21%;
+    }
+    .title-2 {
+      margin-top: 0%;
+    }
+    .sub-title {
+      font-size: 23px;
+      color: #a3a3a3;
+      margin-top: 3%;
+    }
   }
 }
 
@@ -368,6 +391,12 @@ export default {
       background-size: cover;
       background-image: url(~assets/images/product-v1/product-v1-img-3-black@2x.png);
       background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-3-black@2x.png) 1x,url(~assets/images/product-v1/product-v1-img-3-black@2x.png) 2x);
+      .introduce-1, .introduce-2 {
+        position: absolute;
+        font-size: 22px;
+        color: #828282;
+        z-index: 10;
+      }
     }
   }
   &.the-thin-red-line {
@@ -384,6 +413,12 @@ export default {
       background-size: cover;
       background-image: url(~assets/images/product-v1/product-v1-img-3-redline@2x.png);
       background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-3-redline@2x.png) 1x,url(~assets/images/product-v1/product-v1-img-3-redline@2x.png) 2x);
+      .introduce-1, .introduce-2 {
+        position: absolute;
+        font-size: 22px;
+        color: #707070;
+        z-index: 10;
+      }
     }
   }
   &.bright-red {
@@ -400,6 +435,12 @@ export default {
       background-size: cover;
       background-image: url(~assets/images/product-v1/product-v1-img-3-red@2x.png);
       background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-3-red@2x.png) 1x,url(~assets/images/product-v1/product-v1-img-3-red@2x.png) 2x);
+      .introduce-1, .introduce-2 {
+        position: absolute;
+        font-size: 22px;
+        color: #dca09d;
+        z-index: 10;
+      }
     }
   }
   &.blackish-green {
@@ -416,8 +457,24 @@ export default {
       background-size: cover;
       background-image: url(~assets/images/product-v1/product-v1-img-3-green@2x.png);
       background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-3-green@2x.png) 1x,url(~assets/images/product-v1/product-v1-img-3-green@2x.png) 2x);
+      .introduce-1, .introduce-2 {
+        position: absolute;
+        font-size: 22px;
+        color: #aeb5a8;
+        z-index: 10;
+      }
     }
   }
+  .product-colors {
+    
+    .introduce-1 {
+      top: 37%;
+    }
+    .introduce-2 {
+      top: 42.5%;
+    }
+  }
+
   .black-btn {
     position: absolute;
     width: 150px;
@@ -457,6 +514,13 @@ export default {
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-4@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-4@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-4@2x.jpg) 2x);
+  .sub-title {
+    position: relative;
+    top: 21.5%;
+    font-size: 20px;
+    color: #676767;
+    text-align: center;
+  }
 }
 
 .product-v1-img-5 {
@@ -468,6 +532,19 @@ export default {
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-5@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-5@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-5@2x.jpg) 2x);
+  .title, .sub-title {
+    text-align: center;
+    color: #737373;
+    font-weight: 300;
+  }
+  .title {
+    font-size: 19px;
+    padding-top: 240px;
+  }
+  .sub-title {
+    font-size: 14px;
+    padding-top: 1.5%;
+  }
 }
 
 .product-v1-img-6 {
@@ -490,28 +567,92 @@ export default {
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-7@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-7@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-7@2x.jpg) 2x);
+  .title, .sub-title {
+    text-align: center;
+  }
+  .title {
+    font-size: 54px;
+    color: #474748;
+    font-weight: bolder;
+    padding-top: 190px;
+  }
+  .sub-title {
+    font-size: 23px;
+    color: #abb4b7;
+    padding-top: 2.5%;
+  }
 }
 
 .product-v1-img-8 {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-8@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-8@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-8@2x.jpg) 2x);
+  .text {
+    position: absolute;
+    right: 35%;
+    transform: translate(50%);
+  }
+  .title {
+    font-size: 54px;
+    color: #474748;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 270px;
+    &:nth-child(1) {
+      text-indent: -50px;
+    }
+    &:nth-child(2) {
+      padding-top: 0;
+    }
+  }
+  .sub-title {
+    font-size: 23px;
+    color: #9c9c9c;
+    text-align: left;
+    padding-top: 2.5%;
+    &:nth-child(3) {
+      padding-top: 5%;
+    }
+  }
 }
 
 .product-v1-img-9 {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-9@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-9@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-9@2x.jpg) 2x);
+  .text {
+    text-align: center;
+  }
+  .title {
+    font-size: 54px;
+    color: #999da2;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 470px;
+  }
+  .sub-title-1, .sub-title-2 {
+    color: #50575e;
+  }
+  .sub-title-1 {
+    font-size: 23px;
+    color: #50575e;
+    padding-top: 2.5%;
+  }
+  .sub-title-2 {
+    font-size: 18px;
+    color: #50575e;
+    padding-top: 1%;
+  }
 }
 
 .product-v1-img-10 {
@@ -523,6 +664,19 @@ export default {
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-10@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-10@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-10@2x.jpg) 2x);
+  .text {
+    position: absolute;
+    left: 34%;
+    transform: translate(-50%);
+  }
+  .title {
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 370px;
+    opacity: .8;
+  }
 }
 
 .product-v1-img-11 {
@@ -534,6 +688,27 @@ export default {
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-11@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-11@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-11@2x.jpg) 2x);
+  .text {
+    text-align: center;
+  }
+  .title {
+    font-size: 52px;
+    color: #353d50;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 170px;
+  }
+  .sub-title {
+    font-size: 22px;
+    color: #9d9fab;
+    text-align: center;
+    padding-top: .8%;
+    opacity: .85;
+    letter-spacing: .5px;
+    &:nth-child(2) {
+      padding-top: 2%;
+    }
+  }
 }
 
 .product-v1-img-12 {
