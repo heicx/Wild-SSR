@@ -23,8 +23,7 @@ import NEWS from '../../static/news.js';
 export default {
   layout: 'common',
   data () {
-    return {
-    }
+    return {}
   },
   computed: {
     news () {

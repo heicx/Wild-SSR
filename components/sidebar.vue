@@ -16,8 +16,7 @@ export default {
     supportList: Array
   },
   data() {
-    return {
-    }
+    return {}
   }
 }
 </script>

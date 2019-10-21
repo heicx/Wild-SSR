@@ -88,7 +88,7 @@ export default {
             path: ['aboutus', 'joinus'],
             subItems: [
               {
-                name: '公司介绍',
+                name: '品牌介绍',
                 link: '/aboutus',
                 path: 'aboutus',
               },

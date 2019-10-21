@@ -110,7 +110,7 @@ export default {
       title: '加入我们',
       sidebarList: [
         {
-          name: '公司介绍',
+          name: '品牌介绍',
           path: '/aboutus',
         },
         {

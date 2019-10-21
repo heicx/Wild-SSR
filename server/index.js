@@ -4,12 +4,10 @@ const { Nuxt, Builder } = require('nuxt');
 
 const app = new Koa();
 
-// Nuxt.js options
 let config = require('../nuxt.config.js');
 config.dev = !(app.env === 'production');
 
 async function start() {
-  // Instantiate
   const nuxt = new Nuxt(config);
 
   const {
@@ -17,7 +15,6 @@ async function start() {
     port = process.env.PORT || 3200
   } = nuxt.options.server
 
-  // Build in development
   if (config.dev) {
     const builder = new Builder(nuxt);
     await builder.build();
