@@ -15,7 +15,7 @@ export default {
     title: String,
     supportList: Array
   },
-  data() {
+  data () {
     return {}
   }
 }

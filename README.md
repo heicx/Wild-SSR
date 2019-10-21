@@ -1,7 +1,3 @@
-# WILD-SSR
-
-> WILD-SSR
-
 ## Build Setup
 
 ``` bash

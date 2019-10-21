@@ -12,7 +12,7 @@ import appFooter from '../components/footer.vue';
 import Bus from '../assets/bus';
 
 export default {
-  data() {
+  data () {
     return {}
   },
   computed: {
@@ -20,7 +20,7 @@ export default {
       return this.$route.name === 'index'
     }
   },
-  created() {
+  created () {
     console.log('不要那么野，小野一下就好 ...');
   },
   components: {

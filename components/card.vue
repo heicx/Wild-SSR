@@ -7,7 +7,7 @@
 
 <script>
 export default {
-	data() {
+	data () {
     return {}
   },
   props: {
@@ -24,8 +24,6 @@ export default {
       }
     }
   },
-  methods: {
-  }
 }
 </script>
 

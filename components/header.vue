@@ -30,7 +30,6 @@
                 class="item"
                 :class='{"active": subItem.path.indexOf($route.name) > -1 }'
                 :to='subItem.link'
-                @click.native="closeMenu()"
                 tag="span"
               >
                 {{subItem.name}}
@@ -138,9 +137,6 @@ export default {
 		}
   },
   methods: {
-    closeMenu () {
-      // this.showMenu = false;
-    },
     onMouseEnterItem (items) {
       if (items) {
         this.subItemName = items[0];
