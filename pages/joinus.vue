@@ -159,6 +159,7 @@ export default {
     font-size: 14px;
     text-align: left;
     padding: 20px 30px;
+    border-radius: 6px;
   }
   .introduce {
     font-size: 15px;

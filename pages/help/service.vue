@@ -42,12 +42,12 @@ export default {
   data () {
     return {
       supportList: [
-        // {
-        //   name: '常见问题',
-        //   path: '/help/knowledge',
-        // },
         {
-          name: 'V0 产品答疑',
+          name: '公司介绍',
+          path: '/help/aboutus',
+        },
+        {
+          name: 'V1 产品答疑',
           path: '/help/question'
         },
         {
@@ -95,6 +95,8 @@ export default {
     }
     .card-content {
       padding: 25px 30px 38px;
+      background: #fafafa;
+      border-radius: 6px;
       font-size: 14px;
       .title {
         font-weight: bold;

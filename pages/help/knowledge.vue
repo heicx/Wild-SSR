@@ -74,12 +74,12 @@ export default {
     return {
       supportList: [
         {
-          name: '常见问题',
-          path: '/help/knowledge',
+          name: '公司介绍',
+          path: '/help/aboutus',
           active: true,
         },
         {
-          name: 'V0 产品答疑',
+          name: 'V1 产品答疑',
           path: '/help/question',
         },
         {
@@ -126,6 +126,8 @@ export default {
     }
     .card-content {
       padding: 25px 30px;
+      background: #fafafa;
+      border-radius: 6px;
       li {
         margin-bottom: 20px;
         &:last-child {

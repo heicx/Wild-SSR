@@ -83,7 +83,7 @@ export default {
 }
 .entityshop-img-3 {
   width: 100%;
-  height: 594px;
+  height: 780px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

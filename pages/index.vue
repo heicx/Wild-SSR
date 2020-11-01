@@ -1,144 +1,17 @@
 <template>
   <div class="product-v1-wrap">
     <ul>
-      <li class="product-v1-img-1">
-        <ul class="text-opc">
-          <li>不要那么野，”小野一下就好“</li>
-          <li>vvild 小野雾化电子烟 V1/V1 Plus 去除焦油、多种口味、澎湃雾量、真烟口感</li>
-          <li>套装售价：￥299 起</li>
-          <li>特别提醒：本品含有尼古丁，未成年人禁止使用，非吸烟者请勿尝试</li>
-        </ul>
-      </li>
       <li class="product-v1-img-2" @click="playVideo()"></li>
-      <div class="product-v1-img-3-wrap">
-        <div class="product-honor-img"></div>
-        <div class="product-colorful">
-          <h2 class="title-1">航空级铝合金打造的极简主义形体</h2>
-          <h2 class="title-2">三种颜色，一样出色</h2>
-          <h4 class="sub-title">优雅内敛，作风沉稳，电子烟设计上的 “中国大队长”</h4>
+      <li class="product-card-container">
+        <div class="product-card-items">
+          <router-link class="item-1" tag='a' to='/entityshop' />
+          <a class="item-2"></a>
+          <a class="item-3"></a>
         </div>
-        <div
-          class="product-v1-img-3 carbon-black"
-          :class="{'active': colorId === 'carbon-black'}"
-        >
-          <ul class="product-colors">
-            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
-            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
-            <li
-              v-for='(name, index) in colorBtnClass'
-              :key='index'
-              :class="name"
-              @click="changeColors(name)"
-            >
-            </li>
-          </ul>
-        </div>
-        <div
-          class="product-v1-img-3 the-thin-red-line"
-          :class="{'active': colorId === 'the-thin-red-line'}"
-        >
-          <ul class="product-colors">
-            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
-            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
-            <li
-              v-for='(name, index) in colorBtnClass'
-              :key='index'
-              :class="name"
-              @click="changeColors(name)"
-            >
-            </li>
-          </ul>
-        </div>
-        <div
-          class="product-v1-img-3 bright-red"
-          :class="{'active': colorId === 'bright-red'}"
-        >
-          <ul class="product-colors">
-            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
-            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
-            <li
-              v-for='(name, index) in colorBtnClass'
-              :key='index'
-              :class="name"
-              @click="changeColors(name)"
-            >
-            </li>
-          </ul>
-        </div>
-        <div
-          class="product-v1-img-3 blackish-green"
-          :class="{'active': colorId === 'blackish-green'}"
-        >
-          <ul class="product-colors">
-            <li class="introduce-1">屡获殊荣的 Smartisan Design Studio 设计团队诚意打造</li>
-            <li class="introduce-2">让电子烟行业终于迎来了真正的工业设计</li>
-            <li
-              v-for='(name, index) in colorBtnClass'
-              :key='index'
-              :class="name"
-              @click="changeColors(name)"
-            >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <li class="product-v1-img-4">
-        <h4 class="sub-title">压抑时不妨放肆小野一下，忘形时难免触目克制三分</h4>
-        <ul class="text-opc">
-          <li>意味深长的禁忌符号光孔，随呼吸明灭之际，欲语还休</li>
-        </ul>
-      </li>
-      <li class="product-v1-img-5">
-        <h4 class="title">细细的红线，暖暖的保护</h4>
-        <h5 class="sub-title">* 目前 ”细红线“ 外观设计和 ”卫生烟嘴帽“ 功能设计，为 vvild 小野雾化电子烟 V1 Plus 型号所独有</h5>
-      </li>
-      <li class="product-v1-img-6">
-        <ul class="text-opc">
-          <li>五重科技防护</li>
-          <li>油气分离技术</li>
-          <li>顶部密封圈</li>
-          <li>雾化器密封圈</li>
-          <li>独立冷凝槽结构</li>
-          <li>底部密封圈</li>
-          <li>体验拔群的超扁平人体工学烟嘴</li>
-          <li>完美对应吸入时的口型</li>
-          <li>最薄处仅 5.5 mm，嘴感更贴合，嘴型更优雅</li>
-          <li>加长双气道设计和双管结构</li>
-          <li>避免吸入时高温烫嘴</li>
-          <li>创新的 35 mm 加长气道设计，充分雾化的烟油口感更温柔</li>
-        </ul>
       </li>
       <li class="product-v1-img-7">
         <h3 class="title">更多选择，众口不再难调</h3>
         <h4 class="sub-title">新增四种口味，每种都经过精心调制，不容错过</h4>
-      </li>
-      <li class="product-v1-img-8">
-        <ul class="text">
-          <li class="title">“防贪多” 震动提醒设计</li>
-          <li class="title">让身体满足，让心里有数</li>
-          <li class="sub-title">五分钟内吸到 15 口时，烟杆机身会轻微震动一下</li>
-          <li class="sub-title">提醒用户摄入的尼古丁含量已经大致相当于一根香烟</li>
-        </ul>
-      </li>
-      <li class="product-v1-img-9">
-        <ul class="text">
-          <li class="title">告别火机时代，体验防水纪元</li>
-          <li class="sub-title-1">IPX4 级的防水功能，可以让你在淋雨甚至淋浴时，都放心使用</li>
-          <li class="sub-title-2">* IPX4 级防水功能，目前仅限于 vvild 小野雾化电子烟 V1 Plus 机型</li>
-        </ul>
-      </li>
-      <li class="product-v1-img-10">
-        <ul class="text">
-          <li class="title">贴心配件，时刻亮眼</li>
-        </ul>
-      </li>
-      <li class="product-v1-img-11">
-        <ul class="text">
-          <li class="title">“替烟” 利器，一举消灭数百种危害</li>
-          <li class="sub-title">vvild 小野雾化电子烟 V1, V1 Plus 采用行业领先的低温雾化技术，不仅祛除</li>
-          <li class="sub-title">了统香烟在燃烧时产生的数百种有害、有毒和致癌物质，还几乎完美还原了</li>
-          <li class="sub-title">传统香烟口感，在减少身体伤害的同时，也避免了口臭、牙黄、多痰烦恼</li>
-        </ul>
       </li>
       <li class="product-v1-img-12"></li>
       <li class="product-v1-img-13"></li>
@@ -289,6 +162,89 @@ export default {
   background-size: cover;
   background-image: url(~assets/images/product-v1/product-v1-img-1@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-1@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-1@2x.jpg) 2x);
+}
+
+.product-card-container {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  .product-card-items {
+    position: relative;
+    display: inline-block;
+    width: 1220px;
+    height: 450px;
+    border: 1px solid #e4e6ea;
+    border-radius: 12px;
+    background: #fff;
+    .item-1 {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 406px;
+      height: 450px;
+      border-right: 1px solid #e4e6ea;
+      border-radius: 12px 0 0 12px;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 406px;
+        height: 400px;
+        border-radius: 12px 0 0 12px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(~assets/images/product-v1/item-1.jpg);
+        background-image: -webkit-image-set(url(~assets/images/product-v1/item-1.jpg) 1x,url(~assets/images/product-v1/item-1@2x.jpg) 2x);
+      }
+    }
+    .item-2 {
+      position: absolute;
+      left: 407px;
+      bottom: 0;
+      display: block;
+      width: 404px;
+      height: 450px;
+      border-right: 1px solid #e4e6ea;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 404px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(~assets/images/product-v1/item-2.jpg);
+        background-image: -webkit-image-set(url(~assets/images/product-v1/item-2.jpg) 1x,url(~assets/images/product-v1/item-2@2x.jpg) 2x);
+      }
+    }
+    .item-3 {
+     position: absolute;
+      left: 812px;
+      bottom: 0;
+      display: block;
+      width: 406px;
+      height: 450px;
+      border-radius: 0 12px 12px 0;
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 406px;
+        height: 400px;
+        border-radius: 0 12px 12px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(~assets/images/product-v1/item-3.jpg);
+        background-image: -webkit-image-set(url(~assets/images/product-v1/item-3.jpg) 1x,url(~assets/images/product-v1/item-3@2x.jpg) 2x);
+      }
+    }
+  }
 }
 
 .product-v1-img-2 {
@@ -565,10 +521,11 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(~assets/images/product-v1/product-v1-img-7@2x.jpg);
-  background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-7@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-7@2x.jpg) 2x);
+  background-image: url(~assets/images/product-v1/product-v1-img-7.jpg);
+  background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-7.jpg) 1x,url(~assets/images/product-v1/product-v1-img-7@2x.jpg) 2x);
   .title, .sub-title {
     text-align: center;
+    visibility: hidden;
   }
   .title {
     font-size: 54px;
@@ -718,8 +675,8 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(~assets/images/product-v1/product-v1-img-12@2x.jpg);
-  background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-12@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-12@2x.jpg) 2x);
+  background-image: url(~assets/images/product-v1/product-v1-img-12.jpg);
+  background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-12.jpg) 1x,url(~assets/images/product-v1/product-v1-img-12@2x.jpg) 2x);
 }
 
 .product-v1-img-13 {
@@ -729,7 +686,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(~assets/images/product-v1/product-v1-img-1@2x.jpg);
+  background-image: url(~assets/images/product-v1/product-v1-img-13@2x.jpg);
   background-image: -webkit-image-set(url(~assets/images/product-v1/product-v1-img-13@2x.jpg) 1x,url(~assets/images/product-v1/product-v1-img-13@2x.jpg) 2x);
 }
 </style>

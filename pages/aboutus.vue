@@ -98,6 +98,7 @@ export default {
   .card-content {
     color: #7f7f7f;
     font-size: 14px;
+    border-radius: 6px;
     text-align: left;
     padding: 20px 30px;
     .introduce {

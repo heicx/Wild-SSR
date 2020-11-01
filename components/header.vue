@@ -6,7 +6,7 @@
         <div class="item-name text-hidden">
           <a href="/cn/news">新闻动态</a>
         </div>
-        <a href="https://xiaoyeyanju.tmall.com" target="_blank" class="buy-btn"></a>
+        <!-- <a href="https://xiaoyeyanju.tmall.com" target="_blank" class="buy-btn"></a> -->
 				<router-link
           v-for='(item, index) in list'
           :key='index'
@@ -55,70 +55,91 @@ export default {
           },
 					link: '/'
 				},
-				{
-					name: '产品',
-					alias: {
-            path: ['product-v0', 'product-v1'],
-            subItems: [
-              {
-                name: '雾化电子烟 V1',
-                link: '/product-v1',
-                path: 'product-v1',
-              },
-              {
-                name: '雾化电子烟 V0',
-                link: '/product-v0',
-                path: 'product-v0',
-              },
-            ],
+				// {
+				// 	name: '产品',
+				// 	alias: {
+        //     path: ['product-v0', 'product-v1'],
+        //     subItems: [
+        //       {
+        //         name: '雾化电子烟 V1',
+        //         link: '/product-v1',
+        //         path: 'product-v1',
+        //       },
+        //       {
+        //         name: '雾化电子烟 V0',
+        //         link: '/product-v0',
+        //         path: 'product-v0',
+        //       },
+        //     ],
+        //   },
+				// 	link: '/product-v1'
+        // },
+        // {
+				// 	name: '视频中心',
+				// 	alias: {
+        //     path: 'media',
+        //   },
+				// 	link: '/media'
+				// },
+        {
+          name: '专卖店计划',
+          alias: {
+            path: 'entityshop',
           },
-					link: '/product-v1'
+          link: '/entityshop',
         },
         {
-					name: '视频中心',
-					alias: {
-            path: 'media',
+          name: '招商加盟',
+          alias: {
+            path: 'investment',
           },
-					link: '/media'
-				},
-				{
-					name: '关于我们',
-					alias: {
-            path: ['aboutus', 'joinus'],
-            subItems: [
-              {
-                name: '品牌介绍',
-                link: '/aboutus',
-                path: 'aboutus',
-              },
-              {
-                name: '加入我们',
-                link: '/joinus',
-                path: 'joinus',
-              },
-            ],
-          },
-					link: '/aboutus'
+          link: '/investment',
         },
         {
-					name: '招商加盟',
-					alias: {
-            path: ['entityshop', 'investment'],
-            subItems: [
-              {
-                name: '专卖店计划',
-                link: '/entityshop',
-                path: 'entityshop'
-              },
-              {
-                name: '招商加盟',
-                link: '/investment',
-                path: 'investment',
-              }
-            ]
+          name: '关于我们',
+          alias: {
+            path: ['help-knowledge', 'help-aboutus', 'help-question', 'help-service'],
           },
-					link: '/entityshop'
+          link: '/help/aboutus',
         },
+        // {
+				// 	name: '关于我们',
+				// 	alias: {
+        //     path: ['aboutus', 'joinus'],
+        //     subItems: [
+        //       {
+        //         name: '品牌介绍',
+        //         link: '/aboutus',
+        //         path: 'aboutus',
+        //       },
+        //       {
+        //         name: '加入我们',
+        //         link: '/joinus',
+        //         path: 'joinus',
+        //       },
+        //     ],
+        //   },
+				// 	link: '/aboutus'
+        // },
+        // {
+				// 	name: '招商加盟',
+				// 	alias: {
+        //     path: ['entityshop', 'investment'],
+        //     subItems: [
+        //       {
+        //         name: '专卖店计划',
+        //         link: '/entityshop',
+        //         path: 'entityshop'
+        //       },
+        //       {
+        //         name: '招商加盟',
+        //         link: '/investment',
+        //         path: 'investment',
+        //       }
+        //     ]
+        //   },
+				// 	link: '/entityshop'
+        // },
         // {
 				// 	name: '新闻动态',
 				// 	alias: {
@@ -126,13 +147,13 @@ export default {
         //   },
 				// 	link: '/news'
         // },
-        {
-					name: '帮助与支持',
-					alias: {
-            path: ['help-knowledge', 'help-question', 'help-service'],
-          },
-					link: '/help/question'
-				},
+        // {
+				// 	name: '帮助与支持',
+				// 	alias: {
+        //     path: ['help-knowledge', 'help-question', 'help-service'],
+        //   },
+				// 	link: '/help/question'
+				// },
 			]
 		}
   },
