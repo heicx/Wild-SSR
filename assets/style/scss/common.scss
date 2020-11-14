@@ -37,13 +37,11 @@ body {
         font-size: $fontSize16;
 
         .item-name {
+            float: left;
             position: relative;
-            display: inline-block;
             text-align: center;
-            width: 82px;
-            // margin-right: 108px;
-            margin-right: 30px;
             color: #7f7f7f;
+            margin-right: 58px;
 
             &:first-child {
                 margin-right: 24px;

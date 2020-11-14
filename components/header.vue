@@ -96,6 +96,20 @@ export default {
           link: '/investment',
         },
         {
+          name: '用户口碑',
+          alias: {
+            path: ['praises'],
+          },
+          link: '/praises',
+        },
+        {
+          name: '小野店主故事',
+          alias: {
+            path: ['stories', 'stories-id'],
+          },
+          link: '/stories',
+        },
+        {
           name: '关于我们',
           alias: {
             path: ['help-knowledge', 'help-aboutus', 'help-question', 'help-service'],

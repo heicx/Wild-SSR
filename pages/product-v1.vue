@@ -5,8 +5,8 @@
       <li class="product-card-container">
         <div class="product-card-items">
           <router-link class="item-1" tag='a' to='/entityshop' />
-          <a class="item-2"></a>
-          <a class="item-3"></a>
+          <router-link class="item-2" tag='a' to='/praises' />
+          <router-link class="item-3" tag='a' to='/stories' />
         </div>
       </li>
       <li class="product-v1-img-7">
