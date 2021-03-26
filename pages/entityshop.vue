@@ -36,6 +36,7 @@
       </li>
       <li class="entityshop-img-3"></li>
       <li class="entityshop-img-4"></li>
+      <li class="entityshop-img-4-02"></li>
       <li class="entityshop-img-5"></li>
       <li class="entityshop-img-6"></li>
       <li class="entityshop-img-7"></li>
@@ -64,7 +65,7 @@ export default {
 
 .entityshop-img-1 {
   width: 100%;
-  height: 778px;
+  height: 782px;
   margin-top: -1px;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,7 +75,7 @@ export default {
 }
 .entityshop-img-2 {
   width: 100%;
-  height: 893px;
+  height: 879px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -83,7 +84,7 @@ export default {
 }
 .entityshop-img-3 {
   width: 100%;
-  height: 836px;
+  height: 854px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -92,16 +93,25 @@ export default {
 }
 .entityshop-img-4 {
   width: 100%;
-  height: 2313px;
+  height: 954px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(~assets/images/entityshop/entityshop-img-4.jpg);
   background-image: -webkit-image-set(url(~assets/images/entityshop/entityshop-img-4.jpg) 1x,url(~assets/images/entityshop/entityshop-img-4@2x.jpg) 2x);
 }
+.entityshop-img-4-02 {
+  width: 100%;
+  height: 1403px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(~assets/images/entityshop/entityshop-img-4-02.jpg);
+  background-image: -webkit-image-set(url(~assets/images/entityshop/entityshop-img-4-02.jpg) 1x,url(~assets/images/entityshop/entityshop-img-4-02@2x.jpg) 2x);
+}
 .entityshop-img-5 {
   width: 100%;
-  height: 677px;
+  height: 724px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,7 +120,7 @@ export default {
 }
 .entityshop-img-6 {
   width: 100%;
-  height: 854px;
+  height: 872px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -119,7 +129,7 @@ export default {
 }
 .entityshop-img-7 {
   width: 100%;
-  height: 734px;
+  height: 707px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -128,7 +138,7 @@ export default {
 }
 .entityshop-img-8 {
   width: 100%;
-  height: 634px;
+  height: 640px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

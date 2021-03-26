@@ -10,7 +10,7 @@
 				</li>
 			</ul>
 			<ul class="copyright">
-				<li>Copyright © 2019, Shenzhen vvild Technology Co., Ltd. All Rights Reserved.</li>
+				<li>Copyright © 2021, Shenzhen vvild Technology Co., Ltd. All Rights Reserved.</li>
 				<li>
 					<a href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 备 19018410 号 - 1	</a>
 				</li>
